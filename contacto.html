@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        *{
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 70px;
+            background-color: #e42d40;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            
+            color: #142b3b;
+            font-family: monospace;
+            font-size: 30px;
+        }
+
+       
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            border-radius: 3px;
+            
+        }
+
+        li {
+           float: left;
+        }
+
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        
+        }
+
+
+        li a:hover {
+          background-color: #111;
+
+        }
+
+        main {
+            height: 1200px;
+            background-color: #e8e8e7;
+        }
+
+        
+        footer {
+            display:flex;
+            align-items: center;
+            background-color: #22272d;
+            position:fixed;
+            left:0px;
+            bottom:0px;
+            height:100px;
+            width:100%;
+            color:aliceblue;
+            text-align: center;
+            
+           
+        }
+        
+        footer a {
+            text-decoration: none;
+            font-size: 25px;
+            padding: 25px 25px 25px 25px;
+
+        }
+
+        form {
+            /* Centrar el formulario en la página */
+            margin: 0 auto;
+            width: 1000px;
+            /* Esquema del formulario */
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+            font-size: 25px;
+          }
+          
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          
+          form li + li {
+            margin-top: 1em;
+          }
+          
+          label {
+            /* Tamaño y alineación uniforme */
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+          }
+          
+          input,
+          textarea {
+            /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+               Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+            font: 1em sans-serif;
+          
+            /* Tamaño uniforme del campo de texto */
+            width: 875px;
+            box-sizing: border-box;
+          
+            /* Hacer coincidir los bordes del campo del formulario */
+            border: 1px solid #999;
+          }
+          
+          input:focus,
+          textarea:focus {
+            /* Destacado adicional para elementos que tienen el cursor */
+            border-color: #000;
+          }
+          
+          textarea {
+            /* Alinear los campos de texto multilínea con sus etiquetas */
+            vertical-align: top;
+          
+            /* Proporcionar espacio para escribir texto */
+            height: 5em;
+          }
+          
+          .button {
+            /* Alinear los botones con los campos de texto */
+            padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+          }
+          
+          button {
+            /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+               entre las etiquetas y sus campos de texto */
+            margin-left: .5em;
+          }
+    </style>
+</head>
+<body>
+    <header>
+    
+    <nav class="menu">
+        <ul>
+            <li class="navegador"><a href="/index.html">Inicio</a></li>
+            <li class="navegador"><a href="/datos.html">Sobre mí</a></li>
+            <li class="navegador"><a href="/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    </header>
+    <main>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+             <li>
+               <label for="name">Nombre:</label>
+               <input type="text" id="name" name="user_name" >
+             </li>
+             <li>
+               <label for="mail">E-Mail:</label>
+               <input type="email" id="mail" name="user_mail">
+             </li>
+             <li>
+               <label for="msg">Mensaje:</label>
+               <textarea id="msg" name="user_message"></textarea>
+             </li>
+             <li class="button">
+                <button type="submit">Envíe su mensaje</button>
+              </li>
+            </ul>
+           </form> 
+            
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/lucasdamiangebhardt/" target="_blank">Linkedin</a>
+       <a href="http://www.facebook.com/lucas.gebhardt" target="_blank">Facebook</a> 
+       <a href="https://www.instagram.com/lucas.gebhardt/" target="_blank">Instagram</a>
+
+    </footer>
+</body>
+</html>
